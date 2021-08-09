@@ -1,0 +1,38 @@
+body{
+    background-color: darkgrey;
+}
+.main-container{
+    display:flex;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+main{
+    position: relative;
+}
+.szoveg{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    display:block;
+    background:rgb(128,128,128,0.5);
+    color:white;
+}
+aside{
+    background:honeydew;
+    width:100px;
+    position: relative;
+}
+#left-arrow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom:200px;
+}
+#right-arrow{
+    transform:rotate(0.5turn);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
