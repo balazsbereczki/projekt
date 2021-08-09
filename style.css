@@ -24,17 +24,14 @@ h1,p{
 }
 aside{
     display:flex;
+    justify-content: center;
     background:honeydew;
     width:80px;
 }
 #left-arrow{
-    margin-left: auto;
-    margin-right: auto;
     width:20px;
 }
 #right-arrow{
     transform:rotate(0.5turn);
-    margin-left: auto;
-    margin-right: auto;
     width:20px;
 }
