@@ -69,7 +69,7 @@ $('#right-arrow').click(() => {
     if(currentTitle < 3) {
         currentTitle++;
     }
-    loadTitle(currentDesc);
+    loadTitle(currentTitle);
     if(currentDesc < 3) {
         currentDesc++;
     }
