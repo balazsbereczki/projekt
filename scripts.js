@@ -19,13 +19,59 @@ let data4 = {
     description: 'A kosárlabda az egyik legnépszerűbb sportág a Földön.'
 };
 
-
-let currentPhoto = 1;
-
 let imagesData = [data1, data2, data3, data4];
 
-$('#photo').attr('src', imagesData[currentPhoto].photo);
 
-$('#photo-title').
 
-$('#photo-description').
+let currentPhoto = 0;
+
+let loadPhoto = (photoNumber) => {
+  $('#photo').attr('src', imagesData[photoNumber].photo);
+}
+
+loadPhoto(currentPhoto);
+
+let currentTitle = 0;
+
+let loadTitle = (titleNumber) => {
+    $('#photo-title').append(imagesData[titleNumber].title);
+}
+
+loadTitle(currentTitle);
+
+let currentDesc = 0;
+let loadDesc = (descNumber) => {
+    $('#photo-description').append(imagesData[descNumber].description);
+}
+loadDesc(currentDesc);
+
+
+
+$('#left-arrow').click(() => {
+    if(currentPhoto > 0) {
+      currentPhoto--;  
+    }
+    loadPhoto(currentPhoto);
+    if(currentTitle > 0) {
+        currentTitle--;
+    }
+    loadTitle(currentTitle);
+  });
+
+$('#right-arrow').click(() => {
+    if(currentPhoto < 3) {
+        currentPhoto++;
+    }
+    loadPhoto(currentPhoto);
+    if(currentTitle < 3) {
+        currentTitle++;
+    }
+    loadTitle(currentTitle);
+})
+
+
+
+
+
+
+

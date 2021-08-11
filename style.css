@@ -12,6 +12,11 @@ body{
 main{
     position: relative;
 }
+#photo{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
 .szoveg{
     position:absolute;
     bottom:0px;
