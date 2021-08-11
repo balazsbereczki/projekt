@@ -32,16 +32,15 @@ let loadPhoto = (photoNumber) => {
 loadPhoto(currentPhoto);
 
 let currentTitle = 0;
-
 let loadTitle = (titleNumber) => {
-    $('#photo-title').append(imagesData[titleNumber].title);
+    $('#photo-title').text(imagesData[titleNumber].title);
 }
-
 loadTitle(currentTitle);
+
 
 let currentDesc = 0;
 let loadDesc = (descNumber) => {
-    $('#photo-description').append(imagesData[descNumber].description);
+    $('#photo-description').text(imagesData[descNumber].description);
 }
 loadDesc(currentDesc);
 
@@ -56,6 +55,10 @@ $('#left-arrow').click(() => {
         currentTitle--;
     }
     loadTitle(currentTitle);
+    if(currentDesc > 0) {
+        currentDesc--;
+    }
+    loadDesc(currentDesc);
   });
 
 $('#right-arrow').click(() => {
@@ -66,7 +69,11 @@ $('#right-arrow').click(() => {
     if(currentTitle < 3) {
         currentTitle++;
     }
-    loadTitle(currentTitle);
+    loadTitle(currentDesc);
+    if(currentDesc < 3) {
+        currentDesc++;
+    }
+    loadDesc(currentDesc);
 })
 
 
