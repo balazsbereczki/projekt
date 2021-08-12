@@ -8,14 +8,16 @@ body{
     margin-left:auto;
     margin-right:auto;
     margin-top:200px;
+    height:350px;
 }
 main{
     position: relative;
+    height:350px;
 }
 #photo{
     width: 100%;
     max-width: 500px;
-    height: auto;
+    height: 100%;
 }
 .szoveg{
     position:absolute;
