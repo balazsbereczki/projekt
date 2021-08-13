@@ -1,5 +1,5 @@
 body{
-    background-color: darkgrey;
+    background: rgb(194, 188, 188);
 }
 .main-container{
     display:flex;
@@ -42,3 +42,23 @@ aside{
     transform:rotate(0.5turn);
     width:20px;
 }
+.thumbnail{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    max-width:660px;
+    margin-left:auto;
+    margin-right:auto;
+    height:130px;
+}
+.smallphotos{
+    width: 80px;
+    height:65px;
+    border: 3px solid rgba(250, 250, 250, 0.993);
+    border-radius: 4px;
+    margin: 5px;
+}
+.smallphotos:hover{
+    box-shadow: 0 0 1px 2px rgba(16, 19, 20, 0.5);
+}
+

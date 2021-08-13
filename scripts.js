@@ -77,6 +77,32 @@ $('#right-arrow').click(() => {
 })
 
 
+//thumbnail-es rész
+
+let photo1 = 'images/foci.jpg';
+let photo2 = 'images/atletika.jpg';
+let photo3 = 'images/jegkorong.jpg';
+let photo4 = 'images/kosarlabda.jpg';
+
+let thumbnails =[photo1, photo2, photo3, photo4];
+
+
+//ez a rész ködös
+thumbnails.forEach((item,index) => {
+    $('.smallphotos').click((event) => {
+        let indexClicked =
+    $(event.target).attr('thumbnails-index');
+    let numberIndex = parseInt(indexClicked);
+    $('#photo').attr('src',thumbnails[indexClicked]);
+});
+});
+
+$('#thumb1').attr('src',photo1);
+$('#thumb2').attr('src',photo2);
+$('#thumb3').attr('src',photo3);
+$('#thumb4').attr('src',photo4);
+
+
 
 
 
